@@ -1,0 +1,116 @@
+header {
+    padding: 10px 0;
+    font-weight: bold;
+    border-style: dashed;
+    background: transparent;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 1px 11px #000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 12px 0;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 -1px 11px #000;
+}
+
+img {
+    width: 50vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.glow {
+    text-shadow: 0 0 4px #fff;
+    font-size: 20px;
+}
+
+.text {
+    width: 50vw;
+    padding-top: 72px;
+    padding-left: 15px;
+    background: #EFF;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+li {
+    display: flex;
+    flex-flow: column;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 40vw;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    height: 23px;
+    padding: 5px 12px;
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 0 10px #ddd;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+    box-shadow: 0 0 10px #ccc;
+}
+
+button {
+    font-size: 20px;
+    padding: 0 5px;
+    background: linear-gradient(90deg, #b10, #00B, #b10);
+    border: none;
+}
+
+button:hover {
+    box-shadow: 0 0 5px #000;
+    text-shadow: 0 0 5px #eee;
+}
+
+.round {
+    border-radius: 15px;
+    padding: 4px 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    input[type="text"] {
+        width: 70vw;
+    }
+
+    main {
+        flex-flow: column;
+    }
+
+    .text {
+        width: 100vw;
+        padding-bottom: 50px;
+    }
+
+    img {
+        width: 100vw;
+        height: auto;
+        padding-top: 0;
+        border-top: 8px solid black;
+    }
+
+    li {
+        margin: 0;
+    }
+}
